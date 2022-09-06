@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+h3{
+    color: white;
+}
+h2{
+    color: white;
+}
+
+.form form button{
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.all{
+    margin: auto;
+    text-align: center;
+}
+input{
+    width: 20vw;
+    height: 2vw;
+    background-color: #fff;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    margin: auto;
+}
+button{
+    margin-top: 2vw;
+    width: 9vw;
+    height: 3.5vw;
+    border-radius: 10vw;
+    border-style: none;
+    box-shadow: rgb(0, 102, 198) 2px 2px;
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 157, 255);
+    font-size: 1.5vw;
+}
+button:hover{
+    transition: 100ms;
+    background-color: rgb(214, 40, 118);
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    p{
+        font-size: 2.5vw;
+    }
+
+    input{
+        width: 30vw;
+        height: 5vw;
+    }
+    button{
+        margin-top: 2vw;
+        width: 15vw;
+        height: 4vw;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="title all">
+        <h1>Smart light Online mode</h1>
+        <p>This is a small project.</p>
+    </div>
+    <div class="form all">
+        <form action="/update" method="get">
+            <h3>SSID :</h3>
+            <input type="text" name="ssid" placeholder="Type ssid">
+            <h3>Password :</h3>
+            <input type="text" name="password" placeholder="Type Password">
+            <h3>Blynk Token :</h3>
+            <input type="text" name="token" placeholder="Type Token">
+            <h3>Blynk virtual pin name :</h3>
+            <input type="text" name="vpin" placeholder="Type vpin:V0">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="about all">
+        <h1>About us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, explicabo!</p>
+    </div>
+</body>
+</html>
